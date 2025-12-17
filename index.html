@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal Layanan</title>
+
+  <style>
+    :root{
+      --primary:#2563eb;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    header{
+      padding:16px 20px;
+      background:#fff;
+      border-bottom:1px solid #e5e7eb;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    header img{
+      width:40px;
+      height:40px;
+    }
+
+    header h1{
+      font-size:18px;
+      margin:0;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:24px 16px 40px;
+    }
+
+    .intro{
+      margin-bottom:24px;
+    }
+
+    .intro h2{
+      font-size:20px;
+      margin-bottom:6px;
+    }
+
+    .intro p{
+      color:var(--muted);
+      margin:0;
+      font-size:14px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:16px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      padding:20px;
+      text-decoration:none;
+      color:inherit;
+      box-shadow:0 6px 18px rgba(0,0,0,.06);
+      transition:.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 24px rgba(0,0,0,.1);
+    }
+
+    .icon{
+      font-size:36px;
+      margin-bottom:12px;
+    }
+
+    .card h3{
+      margin:0 0 6px;
+      font-size:16px;
+    }
+
+    .card p{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    footer{
+      text-align:center;
+      font-size:12px;
+      color:var(--muted);
+      padding:20px 0;
+    }
+
+    @media (min-width:768px){
+      header h1{font-size:20px}
+      .intro h2{font-size:22px}
+    }
+
+    .icon img{
+      width:36px;
+      height:36px;
+      object-fit:contain;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Ganti logo.png dengan logo instansi -->
+  <img src="logo.png" alt="Logo">
+  <h1>Portal Layanan</h1>
+</header>
+
+<main class="container">
+  <section class="intro">
+    <h2>Selamat Datang</h2>
+    <p>Silakan pilih layanan yang ingin digunakan</p>
+  </section>
+
+  <section class="grid">
+
+    <a href="https://pppklaporan-web.github.io/Aplikasi_Lapor/"
+    class="card"
+    target="_blank" rel="noopener">
+    <div class="icon">📢</div>
+    <h3>Lapor Pengaduan</h3>
+    <p>Laporkan pengaduan dan kendala layanan</p>
+    </a>
+
+
+    <a href="apps/peminjaman/index.html" class="card">
+      <div class="icon">🏢</div>
+      <h3>Pinjam Ruangan</h3>
+      <p>Ajukan peminjaman ruang rapat dan aula</p>
+    </a>
+
+    <a href="https://www.instagram.com/bpssumbar?igsh=amp3cDlvOyZHp3"
+    class="card"
+    <a href="apps/dashboard/index.html" class="card">
+      <div class="icon">📊</div>
+      <h3>Informasi</h3>
+      <p>IG BPS Provinsi Sumatara Barat</p>
+    </a>
+
+    <a href="https://sumbar-9db5b.web.app/dashboard.html"
+       class="card"
+       target="_blank" rel="noopener"> 
+       <div class="icon">🗓️</div>
+       <h3>Agenda Pimpinan</h3>
+       <p>Informasi agenda dan kegiatan pimpinan</p>
+    </a>
+
+    
+
+  </section>
+</main>
+
+<footer>
+  © 2025 BPS Provinsi Sumatera Barat
+</footer>
+
+</body>
+</html>
